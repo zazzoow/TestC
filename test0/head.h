@@ -1,10 +1,27 @@
+void major(int *array, int num) {
 
-void major(int *array) {
+  for(int i = 0 ; i < sizeof *array ; i++) {
 
-  for(int i = 0 ; i < 6 ; i++) {
+    printf("for %d , \n %d , \n  %ld \n", array[i], num ,sizeof *array);
 
-    printf("for %d \n + %ld \n", array[i], sizeof *array);
+  }
 
+}
+
+void sqare(int num , int num2) {
+
+  for(int i = 0; i < num; i++) {
+    for(int j = 0 ; j < num2 ; j++) {
+       printf("__");
+    }
+
+    printf("\n");
+
+    for(int j = 0; j < num2 ; j++) {
+      printf("| ");
+    }
+
+    printf("\n");
   }
 
 }
